@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+	<title> JavaScript - JS - Programação Web com Scripts </title>
+	<meta charset="UTF-8">
+	<meta name="author" content="Annelis">
+	<meta name="description" content="Aplicação da Programação Js 
+    - JavaScript - linguagem interpretada pelo navegador">
+	<meta name="keywords" content="JavaScript, JS, Jquery, Scripts, CSS">
+	<link rel="shortcut icon" href="img/icone.png">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" 
+    crossorigin="anonymous">
+	<script type="text/javascript">
+		function verDados(){
+			var nome;
+			var sobrenome;
+			var idade;
+			var peso;
+			var altura;
+			var imc;
+			nome = 'Alan';
+			sobrenome = 'Catelle';
+			idade = 20;
+			peso = 65;
+			altura = 1.75;
+			imc = peso / Math.pow(altura,2);
+			alert(nome+ ' ' +sobrenome+ ', '+idade+ ' anos. E pesa ' +peso+ ' kgs. IMC: '+imc);
+		}
+	</script>
+	<script type="text/javascript" src="js/js.js"></script>
+	
+	</head>
+	<body>
+		<main class="container-fluid">
+			<h1> Exemplos da Linguagem JS </h1>
+			<hr>
+		
+			<h2> Relembrando métodos - JS inline </h2>
+			<button name="oi" onClick="alert('Oi, seja bem Vindo!')" class="btn btn-info"> Dar Oi </button>
+			
+			<h2> Relembrando funções - JS incorporado </h2>
+			<button name="dados" onClick="verDados()" class="btn btn-info"> Saiba Mais </button>
+			<hr>
+			<h2> Trabalhando com cálculos - JS Externo </h2>
+			<button name="soma" onClick="somar()" class="btn btn-dark"> Somar Valores </button>
+			
+			<button name="subtrair" onClick="subtrair()" class="btn btn-dark"> Subtrair Valores </button>
+			
+			<button name="multiplica" onClick="multiplicar()" class="btn btn-dark"> Multiplicar Valores </button>
+			
+			<button name="dividir" onClick="dividir()" class="btn btn-dark"> Dividir Valores </button>
+			
+			<button name="resto" onClick="verificarResto()" class="btn btn-dark"> Verificar Resto </button>
+			<hr>
+			<h2> Atividades com cálculos - JS Externo </h2>
+			<button name="exercicio1" onClick="exercicio1()" class="btn btn-success"> Exercício 01 </button>
+
+			<button name="exercicio1" onClick="exercicio2()" class="btn btn-success"> Exercício 02 </button>
+
+			<button name="exercicio1" onClick="exercicio3()" class="btn btn-success"> Exercício 03 </button>
+
+			<button name="exercicio1" onClick="exercicio4()" class="btn btn-success"> Exercício 04 </button>
+
+			<button name="exercicio1" onClick="exercicio5()" class="btn btn-success"> Exercício 05 </button>
+
+			<button name="exercicio1" onClick="BotãoIMC()" class="btn btn-success"> BotãoIMC </button>
+
+			<hr>
+
+			<h2>Exemplos de if/else - Condicionais: </h2>
+			<button name="exemploSe1" onclick="exemplo1()" class="btn btn-dark"> Exemplo 1 </button>
+			<button name="exemploSe2" onclick="exemplo2()" class="btn btn-dark"> Exemplo 2 </button>
+			<button name="exemploSe3" onclick="exemplo3()" class="btn btn-dark"> Exemplo 3 </button>
+
+			<hr>
+			<h2>Atividade Prática - JS</h2>
+			<button name="atividade1" onclick="atividade1()" class="btn btn-info">Atividade 1</button>
+			<button name="atividade2" onclick="atividade2()" class="btn btn-info">Atividade 2</button>
+			<button name="atividade3" onclick="atividade3()" class="btn btn-info">Atividade 3</button>
+			<button name="atividade4" onclick="atividade4()" class="btn btn-info">Atividade 4</button>
+			<button name="atividade5" onclick="atividade5()" class="btn btn-info">Atividade 5</button>
+			<button name="atividade6" onclick="atividade6()" class="btn btn-info">Atividade 6</button>
+			
+			
+			<hr>
+			<h2>Trabalhando com datas</h2>
+			<button name="signo" onclick="testarTrabalho()" class="btn btn-dark">Signo</button>
+			<button name="estação" onclick="trabalhoEstacao()" class="btn btn-dark">Estação</button>
+
+		</main>
+	</body>
+</html>
